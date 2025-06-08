@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M's玉造民宿</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>M's玉造民宿</h1>
+        <p>在大阪，找到“像家但更方便”的理想落脚点</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="switchLanguage('zh')">中文</a></li>
+            <li><a href="#" onclick="switchLanguage('en')">English</a></li>
+        </ul>
+    </nav>
+    <div id="tabs">
+        <button class="tab-button" onclick="showTab('overview')">概览</button>
+        <button class="tab-button" onclick="showTab('location')">位置</button>
+        <button class="tab-button" onclick="showTab('features')">特点</button>
+    </div>
+    <div id="content">
+        <div id="overview" class="tab-content">
+            <h2>概览</h2>
+            <p>这里是概览内容...</p>
+        </div>
+        <div id="location" class="tab-content" style="display:none;">
+            <h2>位置</h2>
+            <p>这里是位置内容...</p>
+        </div>
+        <div id="features" class="tab-content" style="display:none;">
+            <h2>特点</h2>
+            <p>这里是特点内容...</p>
+        </div>
+    </div>
+    <section>
+        <h2>简介</h2>
+        <p>如果你是第一次来到大阪，想住得舒适自在，又不想每天纠结垃圾投放时间；如果你是家庭出行，希望找到一个能晒太阳、自己做饭、孩子还能随时休息的安稳空间；或者你是来大阪短期工作、留学、参加展会，厌倦了饭店的封闭和高价餐饮，只想拥有一个真正属于自己的“临时住所”——那么，M's玉造3楼与4楼的民宿空间，将几乎满足你对城市居所的全部想象。</p>
+    </section>
+    <section>
+        <h2>完美位置</h2>
+        <p>M's玉造坐落于大阪市东区玉造1丁目4−7，是一栋四层楼建筑，从外观到内部都经过精心设计与打理。步行不到3分钟即可抵达JR环状线玉造站与地铁长堀鹤见绿地线3号出口。无论是要去心斋桥血拼、去天王寺看展览、去梅田商务洽谈、或是往返关西机场，几乎都能一班车直达，避免拖着行李转车、换乘的烦恼。</p>
+    </section>
+    <section>
+        <h2>完善生活圈</h2>
+        <p>出门即是生活圈——便利店（如711、全家）、Life大型超市、早餐面包坊、熟食便当铺、小药局与饮料自动贩卖机都在步行范围内。不論是趕早班車前買杯熱咖啡、深夜回房前買瓶啤酒，還是準備在廚房裡做頓簡餐，所有生活需求都能“下樓即解決”。在M's玉造，不需要“適應”生活節奏，你可以用自己的節奏生活。</p>
+    </section>
+    <section>
+        <h2>空间优势</h2>
+        <p>每间房约30平方米，空间充裕、结构方正。更特别的是，房间为坐北朝南布局，四面共设有五扇超大窗户，每扇尺寸超过1m×1m，比不少日本一户建的窗户还要宽敞。你可以在早晨的自然光中醒来，不开灯也能读书、办公；午后阳光洒在地板上，即便冬天也感受到房间的暖意。这样优越的自然采光条件，在日本民宿中极为少见，特别适合习惯阳光、需要清新氛围的旅客。</p>
+    </section>
+    <section>
+        <h2>完善配套</h2>
+        <ul>
+            <li><span class="highlight">高速WiFi：</span>适合远程办公、视频会议、流媒体娱乐等多用途</li>
+            <li><span class="highlight">冷暖空调：</span>无论季节转换，始终保持室内舒适</li>
+            <li><span class="highlight">洗衣机、晾衣杆、衣架：</span>长期住也不用发愁换洗</li>
+            <li><span class="highlight">小厨房 + 90升冰箱：</span>可简单料理日常三餐，满足饮食自由</li>
+            <li><span class="highlight">地板采用耐磨防滑的地板胶材质：</span>脚感柔韧，适合老人孩子行走，无需担心摔倒或刮伤</li>
+            <li><span class="highlight">清洁工具齐全：</span>配有电动吸尘器、吸床器、静电除尘扫帚，方便维持房间整洁</li>
+            <li><span class="highlight">每周有专人定期清扫：</span>不必为深度清洁操心，保持卫生与舒适并存</li>
+        </ul>
+    </section>
+    <section>
+        <h2>艺术氛围</h2>
+        <p>不同楼层呈现不同艺术风格：</p>
+        <ul>
+            <li><span class="highlight">三楼：</span>房间墙上挂有世界名画，如梵高的《夜晚的咖啡馆》《星夜》，色彩丰富，极具表现力，适合热爱创意与视觉刺激的旅客</li>
+            <li><span class="highlight">四楼：</span>以田园画为主，描绘草地、花园、湖畔等静谧风景，营造温柔宁静的居住氛围，更适合家庭或想好好休息的住客</li>
+        </ul>
+    </section>
+    <section>
+        <h2>垃圾自由</h2>
+        <p>在日本旅行，垃圾分类和投放时间常让人头痛：不可燃只能周一扔？瓶罐要清洗再排队？但在M's玉造，楼下即是本栋专属私人垃圾桶，住客可24小时自由投放所有生活垃圾（除大型家具外），无需担心分类规则或错过回收时间。对于外籍旅客或短期访客来说，这一点堪称“居住自由”的真正体现。</p>
+    </section>
+    <section>
+        <h2>适合入住的人群</h2>
+        <ul>
+            <li>海外自由行游客：不懂日文也能轻松入住，无需担心生活规则</li>
+            <li>带孩子的家庭：大空间 + 安静光线 + 可做饭 + 安全地板</li>
+            <li>在日务工者/远程办公者：高速网路 + 自由作息 + 周边资源齐全</li>
+            <li>情侣/闺蜜/朋友同行：能一起住也能各自享受独立空间，生活不互打扰</li>
+            <li>短期留学/实习/培训人员：长期住也不乏味，交通与生活极度便利</li>
+        </ul>
+    </section>
+    <footer>
+        <p>无论你计划停留三天、三周，还是三个月，M's玉造都已准备好，等待你的归来。</p>
+    </footer>
+    <script>
+        function switchLanguage(lang) {
+            // 切换语言逻辑
+            alert('切换到 ' + lang);
+        }
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
