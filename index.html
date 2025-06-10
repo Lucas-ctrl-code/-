@@ -18,16 +18,50 @@
   </style>
 </head>
 <body>
-  <!-- 遮罩层，防止文字难以辨认 -->
-  <div class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-    <div class="text-center">
-      <!-- 网站标题 -->
-      <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow mb-8">Hygge民泊</h1>
-      <!-- 进入按钮 -->
-      <a href="main.html" class="inline-block px-8 py-4 bg-white bg-opacity-90 text-indigo-700 font-bold rounded-lg shadow-lg text-xl hover:bg-indigo-100 transition">进入 Enter</a>
+    <!-- 语言切换器，右上角浮动 -->
+    <div class="fixed top-6 right-8 z-30">
+      <button onclick="switchLanguage('zh')" class="lang-btn px-3 py-1 mx-1 rounded bg-white bg-opacity-80 text-indigo-700 font-semibold hover:bg-indigo-100 transition">中文</button>
+      <button onclick="switchLanguage('en')" class="lang-btn px-3 py-1 mx-1 rounded bg-white bg-opacity-80 text-indigo-700 font-semibold hover:bg-indigo-100 transition">EN</button>
+      <button onclick="switchLanguage('ja')" class="lang-btn px-3 py-1 mx-1 rounded bg-white bg-opacity-80 text-indigo-700 font-semibold hover:bg-indigo-100 transition">日本語</button>
     </div>
-  </div>
-  <!-- 关键结构注释：
+    <!-- 遮罩层，防止文字难以辨认 -->
+    <div class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <div class="text-center">
+        <!-- 网站标题 -->
+        <h1 id="hero-title" class="text-4xl md:text-6xl font-extrabold text-white drop-shadow mb-8">Hygge民泊</h1>
+        <!-- 进入按钮 -->
+        <a id="enter-btn" href="main.html" class="inline-block px-8 py-4 bg-white bg-opacity-90 text-indigo-700 font-bold rounded-lg shadow-lg text-xl hover:bg-indigo-100 transition">进入 Enter</a>
+      </div>
+    </div>
+    <script>
+    // 多语言内容对象
+    const translations = {
+      zh: {
+        title: 'Hygge民泊',
+        enter: '进入',
+        enterFull: '进入 Enter',
+      },
+      en: {
+        title: 'Hygge BnB',
+        enter: 'Enter',
+        enterFull: 'Enter',
+      },
+      ja: {
+        title: 'Hygge民泊',
+        enter: '入る',
+        enterFull: '入る Enter',
+      }
+    };
+    // 切换语言函数
+    function switchLanguage(lang) {
+      const t = translations[lang] || translations.zh;
+      document.getElementById('hero-title').textContent = t.title;
+      document.getElementById('enter-btn').textContent = t.enterFull;
+    }
+    // 默认中文
+    switchLanguage('zh');
+    </script>
+    <!-- 关键结构注释：
     1. 背景图片通过body样式设置，cover全屏。
     2. 遮罩层用半透明黑色div实现，内容居中。
     3. 标题和按钮均居中显示。
