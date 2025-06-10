@@ -33,39 +33,78 @@
       <section id="home" class="relative bg-gradient-to-br from-indigo-100 to-white py-16">
         <div class="max-w-4xl mx-auto text-center">
           <h1 id="hero-title" class="text-4xl md:text-5xl font-extrabold text-indigo-800 mb-4">Hygge民泊，温馨如家</h1>
-          <p id="hero-desc" class="text-lg md:text-xl text-gray-600 mb-8">在大阪，找到“像家但更方便”的理想落脚点</p>
+          <p id="hero-desc" class="text-lg md:text-xl text-gray-600 mb-4">在大阪，找到“像家但更方便”的理想落脚点</p>
+          <p id="hero-intro" class="text-base md:text-lg text-gray-500 mb-8">Hygge民泊为您提供舒适、便利、温馨的住宿体验，适合家庭、商务、留学等多种需求。我们致力于让每一位客人都能感受到家的温暖与安心。</p>
           <div class="flex flex-col md:flex-row justify-center gap-4">
-            <a href="#about" class="hero-btn bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-indigo-700 transition">了解我们</a>
-            <a href="#services" class="hero-btn bg-white border border-indigo-600 text-indigo-700 px-6 py-3 rounded-lg font-semibold shadow hover:bg-indigo-50 transition">服务内容</a>
-            <a href="#contact" class="hero-btn bg-indigo-100 text-indigo-700 px-6 py-3 rounded-lg font-semibold shadow hover:bg-indigo-200 transition">联系我们</a>
+            <button onclick="scrollToSection('tabs-section')" class="hero-btn bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-indigo-700 transition">查看详情</button>
+            <button onclick="scrollToSection('contact')" class="hero-btn bg-white border border-indigo-600 text-indigo-700 px-6 py-3 rounded-lg font-semibold shadow hover:bg-indigo-50 transition">联系我们</button>
           </div>
         </div>
       </section>
-      <!-- 卡片区块 -->
-      <section class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 px-4" id="card-section">
-        <div class="card bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
-          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-indigo-100 mb-4">
-            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6"/></svg>
-          </div>
-          <h3 id="card1-title" class="text-xl font-bold mb-2">舒适空间</h3>
-          <p id="card1-desc" class="text-gray-500 mb-4">每间房约30㎡，采光极佳，空间宽敞，适合家庭与长住。</p>
-          <a href="#services" class="text-indigo-600 hover:underline font-semibold">了解详情</a>
+      <!-- Tabs Section -->
+      <section id="tabs-section" class="max-w-4xl mx-auto mt-16 px-4">
+        <div class="mb-6 flex flex-wrap gap-2 justify-center">
+          <button class="tab-btn px-4 py-2 rounded-t bg-indigo-100 text-indigo-700 font-semibold hover:bg-indigo-200 transition" onclick="showTabContent('about-tab')" id="tab-about">公司介绍</button>
+          <button class="tab-btn px-4 py-2 rounded-t bg-indigo-100 text-indigo-700 font-semibold hover:bg-indigo-200 transition" onclick="showTabContent('products-tab')" id="tab-products">产品展示</button>
+          <button class="tab-btn px-4 py-2 rounded-t bg-indigo-100 text-indigo-700 font-semibold hover:bg-indigo-200 transition" onclick="showTabContent('reviews-tab')" id="tab-reviews">用户评价</button>
+          <button class="tab-btn px-4 py-2 rounded-t bg-indigo-100 text-indigo-700 font-semibold hover:bg-indigo-200 transition" onclick="showTabContent('faq-tab')" id="tab-faq">常见问题</button>
         </div>
-        <div class="card bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
-          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-indigo-100 mb-4">
-            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 10c-4.41 0-8-1.79-8-4V7a2 2 0 012-2h3.17a2 2 0 011.41.59l1.42 1.42a2 2 0 001.41.59h3.17a2 2 0 012 2v7c0 2.21-3.59 4-8 4z"/></svg>
+        <div class="bg-white rounded-xl shadow-lg p-8">
+          <!-- 公司介绍 -->
+          <div id="about-tab" class="tab-content-block">
+            <h2 id="about-tab-title" class="text-2xl font-bold text-indigo-700 mb-4">关于Hygge民泊</h2>
+            <p id="about-tab-desc" class="text-gray-600 mb-2">Hygge民泊成立于2018年，位于大阪市中心，致力于为全球旅客提供温馨、便利、安心的住宿体验。我们拥有专业的服务团队，注重细节与舒适，致力于让每一位客人都能感受到家的温暖。无论是短期旅游、商务出行还是长期居住，Hygge民泊都是您的理想选择。</p>
           </div>
-          <h3 id="card2-title" class="text-xl font-bold mb-2">交通便利</h3>
-          <p id="card2-desc" class="text-gray-500 mb-4">步行3分钟到地铁与JR，直达心斋桥、天王寺、梅田、机场。</p>
-          <a href="#about" class="text-indigo-600 hover:underline font-semibold">查看更多</a>
-        </div>
-        <div class="card bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
-          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-indigo-100 mb-4">
-            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 17v-2a4 4 0 018 0v2m-4-4a4 4 0 00-4-4V7a4 4 0 018 0v2a4 4 0 00-4 4z"/></svg>
+          <!-- 产品展示 -->
+          <div id="products-tab" class="tab-content-block hidden">
+            <h2 id="products-tab-title" class="text-2xl font-bold text-indigo-700 mb-4">产品展示</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="rounded-lg overflow-hidden shadow border bg-gray-50">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="客房A" class="w-full h-48 object-cover">
+                <div class="p-4">
+                  <h3 id="product1-title" class="font-bold text-lg mb-2">温馨家庭房</h3>
+                  <p id="product1-desc" class="text-gray-600">宽敞明亮，配备独立厨房、洗衣机、阳台，适合家庭或长住客人。</p>
+                </div>
+              </div>
+              <div class="rounded-lg overflow-hidden shadow border bg-gray-50">
+                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80" alt="客房B" class="w-full h-48 object-cover">
+                <div class="p-4">
+                  <h3 id="product2-title" class="font-bold text-lg mb-2">商务公寓房</h3>
+                  <p id="product2-desc" class="text-gray-600">高速WiFi、办公桌椅、安静环境，适合商务差旅与远程办公。</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 id="card3-title" class="text-xl font-bold mb-2">多语言友好</h3>
-          <p id="card3-desc" class="text-gray-500 mb-4">支持中/英/日三语，轻松切换，服务无障碍。</p>
-          <a href="#contact" class="text-indigo-600 hover:underline font-semibold">联系我们</a>
+          <!-- 用户评价 -->
+          <div id="reviews-tab" class="tab-content-block hidden">
+            <h2 id="reviews-tab-title" class="text-2xl font-bold text-indigo-700 mb-4">用户评价</h2>
+            <div class="space-y-6">
+              <div class="bg-indigo-50 rounded-lg p-4">
+                <p id="review1-content" class="text-gray-700 mb-2">“房间非常干净宽敞，交通便利，服务人员很热情，家人都很满意！”</p>
+                <span id="review1-author" class="text-sm text-gray-500">—— 王女士（中国）</span>
+              </div>
+              <div class="bg-indigo-50 rounded-lg p-4">
+                <p id="review2-content" class="text-gray-700 mb-2">“設備が新しく快適でした。日本語・英語対応で安心して滞在できました。”</p>
+                <span id="review2-author" class="text-sm text-gray-500">—— 佐藤様（日本）</span>
+              </div>
+            </div>
+          </div>
+          <!-- 常见问题 -->
+          <div id="faq-tab" class="tab-content-block hidden">
+            <h2 id="faq-tab-title" class="text-2xl font-bold text-indigo-700 mb-4">常见问题</h2>
+            <div class="mb-4">
+              <h3 id="faq1-q" class="font-semibold text-indigo-600">Q: 可以带宠物入住吗？</h3>
+              <p id="faq1-a" class="text-gray-600 mb-2">A: 很抱歉，目前暂不支持携带宠物入住。</p>
+            </div>
+            <div class="mb-4">
+              <h3 id="faq2-q" class="font-semibold text-indigo-600">Q: 是否有停车位？</h3>
+              <p id="faq2-a" class="text-gray-600 mb-2">A: 民宿附近有付费停车场，建议提前预约。</p>
+            </div>
+            <div class="mb-4">
+              <h3 id="faq3-q" class="font-semibold text-indigo-600">Q: 入住和退房时间？</h3>
+              <p id="faq3-a" class="text-gray-600 mb-2">A: 入住时间为15:00后，退房时间为11:00前。</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- 预留内容区块 -->
@@ -108,9 +147,29 @@
         nav: ["首页", "关于我们", "服务内容", "联系我们"],
         heroTitle: "Hygge民泊，温馨如家",
         heroDesc: "在大阪，找到“像家但更方便”的理想落脚点",
-        card1: ["舒适空间", "每间房约30㎡，采光极佳，空间宽敞，适合家庭与长住。", "了解详情"],
-        card2: ["交通便利", "步行3分钟到地铁与JR，直达心斋桥、天王寺、梅田、机场。", "查看更多"],
-        card3: ["多语言友好", "支持中/英/日三语，轻松切换，服务无障碍。", "联系我们"],
+        heroIntro: "Hygge民泊为您提供舒适、便利、温馨的住宿体验，适合家庭、商务、留学等多种需求。我们致力于让每一位客人都能感受到家的温暖与安心。",
+        btnDetail: "查看详情",
+        btnContact: "联系我们",
+        tabs: ["公司介绍", "产品展示", "用户评价", "常见问题"],
+        aboutTabTitle: "关于Hygge民泊",
+        aboutTabDesc: "Hygge民泊成立于2018年，位于大阪市中心，致力于为全球旅客提供温馨、便利、安心的住宿体验。我们拥有专业的服务团队，注重细节与舒适，致力于让每一位客人都能感受到家的温暖。无论是短期旅游、商务出行还是长期居住，Hygge民泊都是您的理想选择。",
+        productsTabTitle: "产品展示",
+        product1Title: "温馨家庭房",
+        product1Desc: "宽敞明亮，配备独立厨房、洗衣机、阳台，适合家庭或长住客人。",
+        product2Title: "商务公寓房",
+        product2Desc: "高速WiFi、办公桌椅、安静环境，适合商务差旅与远程办公。",
+        reviewsTabTitle: "用户评价",
+        review1Content: "“房间非常干净宽敞，交通便利，服务人员很热情，家人都很满意！”",
+        review1Author: "—— 王女士（中国）",
+        review2Content: "“設備が新しく快適でした。日本語・英語対応で安心して滞在できました。”",
+        review2Author: "—— 佐藤様（日本）",
+        faqTabTitle: "常见问题",
+        faq1q: "Q: 可以带宠物入住吗？",
+        faq1a: "A: 很抱歉，目前暂不支持携带宠物入住。",
+        faq2q: "Q: 是否有停车位？",
+        faq2a: "A: 民宿附近有付费停车场，建议提前预约。",
+        faq3q: "Q: 入住和退房时间？",
+        faq3a: "A: 入住时间为15:00后，退房时间为11:00前。",
         aboutTitle: "关于我们",
         aboutDesc: "Hygge民泊致力于为旅客提供温馨、便利、舒适的住宿体验。无论是家庭出行、商务差旅还是短期留学，我们都能为您提供理想的空间。",
         servicesTitle: "服务内容",
@@ -131,9 +190,29 @@
         nav: ["Home", "About", "Services", "Contact"],
         heroTitle: "Hygge BnB, Feel at Home in Osaka",
         heroDesc: "Find your ideal stay in Osaka – as cozy as home, but even more convenient.",
-        card1: ["Comfort Space", "Each room is about 30㎡, bright and spacious, perfect for families and long stays.", "Learn More"],
-        card2: ["Great Location", "3-min walk to subway & JR, direct to Shinsaibashi, Tennoji, Umeda, Airport.", "See More"],
-        card3: ["Multilingual Friendly", "Supports Chinese/English/Japanese, easy switch, barrier-free service.", "Contact Us"],
+        heroIntro: "Hygge BnB offers you a cozy, convenient, and warm stay, perfect for families, business, and study. We strive to make every guest feel at home and at ease.",
+        btnDetail: "View Details",
+        btnContact: "Contact Us",
+        tabs: ["About Us", "Products", "Reviews", "FAQ"],
+        aboutTabTitle: "About Hygge BnB",
+        aboutTabDesc: "Founded in 2018 in central Osaka, Hygge BnB is dedicated to providing a warm, convenient, and safe stay for travelers worldwide. Our professional team focuses on details and comfort, ensuring every guest feels at home. Whether for short trips, business, or long-term stays, Hygge BnB is your ideal choice.",
+        productsTabTitle: "Products",
+        product1Title: "Family Room",
+        product1Desc: "Spacious and bright, with kitchen, washer, and balcony. Perfect for families or long stays.",
+        product2Title: "Business Apartment",
+        product2Desc: "High-speed WiFi, desk, quiet environment. Ideal for business and remote work.",
+        reviewsTabTitle: "Reviews",
+        review1Content: '"The room was very clean and spacious, great location, and the staff were very friendly. My family was very satisfied!"',
+        review1Author: "—— Ms. Wang (China)",
+        review2Content: '"Facilities were new and comfortable. Japanese/English support made my stay worry-free."',
+        review2Author: "—— Mr. Sato (Japan)",
+        faqTabTitle: "FAQ",
+        faq1q: "Q: Can I bring pets?",
+        faq1a: "A: Sorry, pets are not allowed at this time.",
+        faq2q: "Q: Is parking available?",
+        faq2a: "A: Paid parking is available nearby. Please reserve in advance.",
+        faq3q: "Q: What are check-in and check-out times?",
+        faq3a: "A: Check-in after 15:00, check-out before 11:00.",
         aboutTitle: "About Us",
         aboutDesc: "Hygge BnB is dedicated to providing guests with a warm, convenient, and comfortable stay. Whether for family trips, business, or short-term study, we offer your ideal space.",
         servicesTitle: "Services",
@@ -154,9 +233,29 @@
         nav: ["ホーム", "私たちについて", "サービス", "お問い合わせ"],
         heroTitle: "Hygge民泊、大阪で我が家のような温もり",
         heroDesc: "大阪で“家のように快適”かつ便利な理想の滞在先を見つけよう。",
-        card1: ["快適な空間", "各部屋約30㎡、明るく広々、家族や長期滞在に最適。", "詳細を見る"],
-        card2: ["アクセス抜群", "地下鉄・JRまで徒歩3分、心斎橋・天王寺・梅田・空港へ直通。", "もっと見る"],
-        card3: ["多言語対応", "中・英・日の3言語対応、簡単切替、バリアフリーサービス。", "お問い合わせ"],
+        heroIntro: "Hygge民泊は、家族旅行・ビジネス・留学など様々なニーズに対応した、快適で便利な宿泊体験を提供します。すべてのお客様に自宅のような安心感をお届けします。",
+        btnDetail: "詳細を見る",
+        btnContact: "お問い合わせ",
+        tabs: ["会社紹介", "お部屋紹介", "レビュー", "よくある質問"],
+        aboutTabTitle: "Hygge民泊について",
+        aboutTabDesc: "Hygge民泊は2018年創業、大阪市中心部に位置し、世界中の旅行者に温かく便利で安心な滞在を提供しています。プロのスタッフが細部までこだわり、快適さを追求。短期旅行・ビジネス・長期滞在まで、理想の選択肢です。",
+        productsTabTitle: "お部屋紹介",
+        product1Title: "ファミリールーム",
+        product1Desc: "広々とした明るい部屋。キッチン・洗濯機・バルコニー付き。家族や長期滞在に最適。",
+        product2Title: "ビジネスアパートメント",
+        product2Desc: "高速WiFi・デスク・静かな環境。ビジネスやリモートワークに最適。",
+        reviewsTabTitle: "レビュー",
+        review1Content: '「部屋がとても清潔で広く、立地も良く、スタッフも親切でした。家族全員大満足です！」',
+        review1Author: "—— 王さん（中国）",
+        review2Content: '「設備が新しく快適でした。日本語・英語対応で安心して滞在できました。」',
+        review2Author: "—— 佐藤様（日本）",
+        faqTabTitle: "よくある質問",
+        faq1q: "Q: ペットと一緒に宿泊できますか？",
+        faq1a: "A: 申し訳ありませんが、現在ペット同伴はできません。",
+        faq2q: "Q: 駐車場はありますか？",
+        faq2a: "A: 近隣に有料駐車場があります。事前予約をおすすめします。",
+        faq3q: "Q: チェックイン・チェックアウト時間は？",
+        faq3a: "A: チェックインは15:00以降、チェックアウトは11:00までです。",
         aboutTitle: "私たちについて",
         aboutDesc: "Hygge民泊は、温かく便利で快適な宿泊体験を提供します。家族旅行、ビジネス、短期留学など、理想の空間をご用意しています。",
         servicesTitle: "サービス",
@@ -184,33 +283,63 @@
       // Hero
       document.getElementById('hero-title').textContent = t.heroTitle;
       document.getElementById('hero-desc').textContent = t.heroDesc;
-      // 卡片
-      document.getElementById('card1-title').textContent = t.card1[0];
-      document.getElementById('card1-desc').textContent = t.card1[1];
-      document.querySelector('#card-section .card:nth-child(1) a').textContent = t.card1[2];
-      document.getElementById('card2-title').textContent = t.card2[0];
-      document.getElementById('card2-desc').textContent = t.card2[1];
-      document.querySelector('#card-section .card:nth-child(2) a').textContent = t.card2[2];
-      document.getElementById('card3-title').textContent = t.card3[0];
-      document.getElementById('card3-desc').textContent = t.card3[1];
-      document.querySelector('#card-section .card:nth-child(3) a').textContent = t.card3[2];
-      // About
+      document.getElementById('hero-intro').textContent = t.heroIntro;
+      document.querySelector('.hero-btn').textContent = t.btnDetail;
+      document.querySelectorAll('.hero-btn')[1].textContent = t.btnContact;
+      // Tabs
+      document.getElementById('tab-about').textContent = t.tabs[0];
+      document.getElementById('tab-products').textContent = t.tabs[1];
+      document.getElementById('tab-reviews').textContent = t.tabs[2];
+      document.getElementById('tab-faq').textContent = t.tabs[3];
+      // Tabs内容
+      document.getElementById('about-tab-title').textContent = t.aboutTabTitle;
+      document.getElementById('about-tab-desc').textContent = t.aboutTabDesc;
+      document.getElementById('products-tab-title').textContent = t.productsTabTitle;
+      document.getElementById('product1-title').textContent = t.product1Title;
+      document.getElementById('product1-desc').textContent = t.product1Desc;
+      document.getElementById('product2-title').textContent = t.product2Title;
+      document.getElementById('product2-desc').textContent = t.product2Desc;
+      document.getElementById('reviews-tab-title').textContent = t.reviewsTabTitle;
+      document.getElementById('review1-content').textContent = t.review1Content;
+      document.getElementById('review1-author').textContent = t.review1Author;
+      document.getElementById('review2-content').textContent = t.review2Content;
+      document.getElementById('review2-author').textContent = t.review2Author;
+      document.getElementById('faq-tab-title').textContent = t.faqTabTitle;
+      document.getElementById('faq1-q').textContent = t.faq1q;
+      document.getElementById('faq1-a').textContent = t.faq1a;
+      document.getElementById('faq2-q').textContent = t.faq2q;
+      document.getElementById('faq2-a').textContent = t.faq2a;
+      document.getElementById('faq3-q').textContent = t.faq3q;
+      document.getElementById('faq3-a').textContent = t.faq3a;
+      // 其他区块
       document.getElementById('about-title').textContent = t.aboutTitle;
       document.getElementById('about-desc').textContent = t.aboutDesc;
-      // Services
       document.getElementById('services-title').textContent = t.servicesTitle;
       const servicesList = document.getElementById('services-list');
       servicesList.innerHTML = t.servicesList.map(item => `<li>${item}</li>`).join('');
-      // Contact
       document.getElementById('contact-title').textContent = t.contactTitle;
       document.getElementById('contact-desc').textContent = t.contactDesc;
       document.getElementById('contact-email').textContent = t.contactEmail;
       document.getElementById('contact-email').href = `mailto:${t.contactEmail}`;
       document.getElementById('contact-phone').textContent = t.contactPhone;
       document.getElementById('contact-phone').href = `tel:${t.contactPhone}`;
-      // Footer
       document.getElementById('footer-text').textContent = t.footer;
     }
+
+    // Tabs切换逻辑
+    function showTabContent(tabId) {
+      document.querySelectorAll('.tab-content-block').forEach(el => el.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+    }
+    // 默认显示第一个tab
+    showTabContent('about-tab');
+
+    // 平滑滚动到section
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
     // 默认中文
     switchLanguage('zh');
     </script>
