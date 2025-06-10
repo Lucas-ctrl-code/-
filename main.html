@@ -8,8 +8,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 min-h-screen flex flex-col">
-    <!-- 语言切换器，右上角浮动 -->
-    <div class="fixed top-6 right-8 z-30">
+    <!-- 语言切换器，右下角浮动，避免与导航栏重叠 -->
+    <div class="fixed bottom-6 right-8 z-30">
       <button onclick="switchLanguage('zh')" class="lang-btn px-3 py-1 mx-1 rounded bg-white bg-opacity-80 text-indigo-700 font-semibold hover:bg-indigo-100 transition">中文</button>
       <button onclick="switchLanguage('en')" class="lang-btn px-3 py-1 mx-1 rounded bg-white bg-opacity-80 text-indigo-700 font-semibold hover:bg-indigo-100 transition">EN</button>
       <button onclick="switchLanguage('ja')" class="lang-btn px-3 py-1 mx-1 rounded bg-white bg-opacity-80 text-indigo-700 font-semibold hover:bg-indigo-100 transition">日本語</button>
