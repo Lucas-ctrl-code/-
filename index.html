@@ -8,220 +8,211 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <header class="bg-white shadow p-6 text-center">
-        <h1 class="text-3xl font-bold text-indigo-700 mb-2">Hygge民泊</h1>
-        <p class="text-lg text-gray-500">在大阪，找到“像家但更方便”的理想落脚点</p>
-    </header>
-    <nav class="bg-indigo-100 py-2">
-        <ul class="flex justify-center space-x-6">
-            <li><a href="#" onclick="switchLanguage('zh')" class="text-indigo-700 hover:underline">中文</a></li>
-            <li><a href="#" onclick="switchLanguage('en')" class="text-indigo-700 hover:underline">English</a></li>
-        </ul>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+    <!-- 顶部导航栏 -->
+    <nav class="bg-white shadow fixed w-full z-20 top-0 left-0">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex items-center space-x-8">
+            <span class="text-2xl font-bold text-indigo-700">Hygge民泊</span>
+            <a href="#home" class="nav-link text-gray-700 hover:text-indigo-700 px-3 py-2 rounded transition">首页</a>
+            <a href="#about" class="nav-link text-gray-700 hover:text-indigo-700 px-3 py-2 rounded transition">关于我们</a>
+            <a href="#services" class="nav-link text-gray-700 hover:text-indigo-700 px-3 py-2 rounded transition">服务内容</a>
+            <a href="#contact" class="nav-link text-gray-700 hover:text-indigo-700 px-3 py-2 rounded transition">联系我们</a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <button onclick="switchLanguage('zh')" class="lang-btn px-2 py-1 text-sm rounded hover:bg-indigo-100 text-indigo-700">中文</button>
+            <button onclick="switchLanguage('en')" class="lang-btn px-2 py-1 text-sm rounded hover:bg-indigo-100 text-indigo-700">EN</button>
+            <button onclick="switchLanguage('ja')" class="lang-btn px-2 py-1 text-sm rounded hover:bg-indigo-100 text-indigo-700">日本語</button>
+          </div>
+        </div>
+      </div>
     </nav>
-    <div id="tabs" class="flex justify-center mt-6 space-x-4">
-        <button class="tab-button px-4 py-2 rounded-t bg-indigo-200 text-indigo-800 font-semibold hover:bg-indigo-300 transition" onclick="showTab('overview')">概览</button>
-        <button class="tab-button px-4 py-2 rounded-t bg-indigo-200 text-indigo-800 font-semibold hover:bg-indigo-300 transition" onclick="showTab('location')">位置</button>
-        <button class="tab-button px-4 py-2 rounded-t bg-indigo-200 text-indigo-800 font-semibold hover:bg-indigo-300 transition" onclick="showTab('features')">特点</button>
-    </div>
-    <div id="content" class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
-        <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col justify-between">
-            <div id="overview" class="tab-content">
-                <h2 class="text-2xl font-bold mb-4 text-indigo-700">概览</h2>
-                <p>这里是概览内容...</p>
-            </div>
-            <div id="location" class="tab-content" style="display:none;">
-                <h2 class="text-2xl font-bold mb-4 text-indigo-700">位置</h2>
-                <p>这里是位置内容...</p>
-            </div>
-            <div id="features" class="tab-content" style="display:none;">
-                <h2 class="text-2xl font-bold mb-4 text-indigo-700">特点</h2>
-                <p>这里是特点内容...</p>
-            </div>
+    <main class="flex-1 pt-20 pb-8">
+      <!-- Hero Section -->
+      <section id="home" class="relative bg-gradient-to-br from-indigo-100 to-white py-16">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 id="hero-title" class="text-4xl md:text-5xl font-extrabold text-indigo-800 mb-4">Hygge民泊，温馨如家</h1>
+          <p id="hero-desc" class="text-lg md:text-xl text-gray-600 mb-8">在大阪，找到“像家但更方便”的理想落脚点</p>
+          <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="#about" class="hero-btn bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-indigo-700 transition">了解我们</a>
+            <a href="#services" class="hero-btn bg-white border border-indigo-600 text-indigo-700 px-6 py-3 rounded-lg font-semibold shadow hover:bg-indigo-50 transition">服务内容</a>
+            <a href="#contact" class="hero-btn bg-indigo-100 text-indigo-700 px-6 py-3 rounded-lg font-semibold shadow hover:bg-indigo-200 transition">联系我们</a>
+          </div>
         </div>
-        <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col justify-between">
-            <!-- English 文案 -->
-            <div id="english" class="tab-content" style="display:none;">
-                <h2 class="text-2xl font-bold mb-4 text-indigo-700">English</h2>
-                <div class="prose max-w-none">
-                    <h3>🏡 M's Tamatsukuri — Your Ideal Urban Stay in Osaka with Comfort, Convenience, and Style</h3>
-                    <p>If it’s your first time in Osaka and you're looking for a cozy, hassle-free place to stay without having to worry about garbage disposal rules—<br>
-                    If you’re traveling with family and need a safe, spacious space with sunlight, a kitchen, and room for everyone to rest—<br>
-                    Or if you’re here short-term for business, study, or events and you’re tired of overpriced hotel meals and boxed rooms,<br>
-                    Then the guest rooms on the 3rd and 4th floors of M's Tamatsukuri may be exactly what you're looking for.</p>
-                    <h4>✅ Prime Location: Central Osaka, where mobility is effortless</h4>
-                    <p>M’s Tamatsukuri is located at 1-4-7, Tamatsukuri, Higashi Ward, Osaka City, Osaka Prefecture, 537-0024—a four-story building with a clean, functional design. It’s just a 3-minute walk from both JR Osaka Loop Line Tamatsukuri Station and Subway Nagahori-Tsurumi-ryokuchi Line Exit 3.<br>
-                    Whether you’re heading to Shinsaibashi for shopping, to Tennoji for exhibitions, to Umeda for work, or catching a train to Kansai Airport, you can reach your destination directly with minimal transfers and zero stress.</p>
-                    <h4>🛍️ Complete Urban Access: Convenience stores, supermarkets, breakfast shops—everything’s nearby</h4>
-                    <p>Step outside and you’ll find everything you need: 7-Eleven, FamilyMart, the large LIFE supermarket, bakeries, bento shops, drugstores, and vending machines—all within walking distance.<br>
-                    Whether it’s a hot coffee before your morning train, a cold beer before bed, or ingredients for a homemade dinner, daily errands are easy and quick.<br>
-                    You’re not adjusting to Osaka's pace—you’re living by your own rhythm.</p>
-                    <h4>🌤️ Rare Sunlight: 4-way ventilation + oversized windows—light all day long</h4>
-                    <p>Each guest room is around 30m², with a functional, open layout. Even more rare, the rooms are north-south oriented with windows on all four sides, totaling five large windows, each over 1 meter x 1 meter—larger than those found in many standalone houses in Japan.<br>
-                    You’ll wake to natural light, read and work without switching on the lights, and enjoy a warm, sun-filled space even in winter.<br>
-                    Such exceptional daylight and airflow are hard to come by—perfect for those who love bright, healthy living environments.</p>
-                    <h4>🛋️ Fully Equipped: A space ready to live, not just sleep</h4>
-                    <ul>
-                        <li>High-speed Wi-Fi: Ideal for remote work, streaming, and video calls</li>
-                        <li>Air conditioning (heating & cooling): Comfortable in all seasons</li>
-                        <li>Washing machine + drying rod and hangers: No need for laundromats</li>
-                        <li>Compact kitchen + 90L refrigerator: Cook your own meals and store groceries</li>
-                        <li>Durable flooring: Made of cushioned vinyl, it’s resilient, safe, and comfortable for families with kids or the elderly</li>
-                        <li>Cleaning tools included: Electric vacuum cleaner, mattress vacuum, and static broom</li>
-                        <li>Professional weekly cleaning: Deep cleans included, so the room always stays fresh and sanitary</li>
-                    </ul>
-                    <h4>🖼️ Artful Interiors: Thoughtfully curated style and atmosphere</h4>
-                    <ul>
-                        <li>The 3rd floor features world-renowned artworks, including Vincent van Gogh’s Café Terrace at Night and The Starry Night—vibrant and expressive, perfect for creative spirits</li>
-                        <li>The 4th floor is decorated with pastoral and countryside scenes, offering a gentle, serene mood for those seeking rest and tranquility</li>
-                    </ul>
-                    <p>Art isn’t just decoration—it defines the soul of the room, transforming the space into a calming, living gallery.</p>
-                    <h4>🗑️ Freedom of Disposal: Private garbage bin, 24/7 trash access</h4>
-                    <p>One of the biggest pain points for travelers in Japan? Trash sorting and disposal rules. Burnables on Monday only? Bottles must be rinsed and bagged? Miss the time, wait three days?<br>
-                    Not here. M's Tamatsukuri has its own private garbage bin downstairs, available 24/7 for all types of household waste (except large furniture).<br>
-                    This means no sorting stress, no time restrictions, and no awkwardness about doing it “wrong.” It’s true freedom for daily living, rare even by local standards.</p>
-                    <h4>🧳 Who is this perfect for?</h4>
-                    <ul>
-                        <li>International travelers: Language barriers? No problem. Life here is plug-and-play.</li>
-                        <li>Families with kids: Spacious, quiet, full kitchen, and safe flooring—easy to settle in</li>
-                        <li>Remote workers or freelancers: Fast Wi-Fi, good lighting, and comfortable furniture</li>
-                        <li>Couples or friends: Share a space, cook together, enjoy privacy when needed</li>
-                        <li>Short-term students/interns: Feels like home, with all the benefits of the city nearby</li>
-                    </ul>
-                    <p>Whether you’re staying 3 nights, 3 weeks, or 3 months, M’s Tamatsukuri provides the flexibility, comfort, and environment to make Osaka truly feel like yours.</p>
-                    <h4>🎯 M's Tamatsukuri: More than a stay. It's a better way to live in Osaka.</h4>
-                    <p>In a city as fast-paced and stimulating as Osaka, M’s Tamatsukuri offers not just a guest room, but a multi-purpose lifestyle space.<br>
-                    Enjoy handmade dumplings, Cantonese BBQ, and ginger tea from the Hong Kong restaurant on the first floor.<br>
-                    Refresh your look at the hair salon on the second.<br>
-                    Then head up to your room—a place filled with light, personality, and everything you need to truly rest or live.<br>
-                    No matter what brings you to Osaka, M's Tamatsukuri is ready to welcome you home.</p>
-                </div>
-            </div>
-            <!-- Japanese 文案 -->
-            <div id="japanese" class="tab-content" style="display:none;">
-                <h2 class="text-2xl font-bold mb-4 text-indigo-700">日本語</h2>
-                <div class="prose max-w-none">
-                    <h3>🏡 M's玉造 ―「便利さ」と「居心地の良さ」を兼ね備えた、大阪の理想的な滞在拠点</h3>
-                    <p>初めて大阪を訪れる旅行者で、ごみの分別や収集時間に煩わされず、快適に過ごしたい方。<br>
-                    ご家族での旅行で、陽の光が差し込み、自炊もでき、子どもも安心して過ごせるスペースを探している方。<br>
-                    出張、短期留学、イベント参加などの目的で滞在し、ホテルの閉塞感や高額な外食にうんざりしている方。</p>
-                    <p>そんなあなたにぴったりなのが、M’s玉造の3階・4階にある民宿タイプの客室です。</p>
-                    <h4>✅ 抜群の立地：大阪の中心部、アクセスはストレスフリー</h4>
-                    <p>M’s玉造は、大阪市東区玉造1丁目4-7（〒537-0024）に位置する、地上4階建ての多機能ビルです。<br>
-                    JR大阪環状線「玉造駅」、大阪メトロ長堀鶴見緑地線「玉造駅3番出口」から徒歩わずか3分以内という、非常に便利なロケーション。<br>
-                    心斎橋でのショッピング、天王寺での展示会、梅田でのビジネス、関西空港への移動も乗り換え少なくアクセス可能。大きな荷物を持っての移動も安心です。</p>
-                    <h4>🛍️ 生活環境も充実：コンビニ、スーパー、朝食カフェが徒歩圏内</h4>
-                    <p>建物のすぐそばには、セブンイレブン、ファミリーマート、LIFEスーパー、パン屋、弁当屋、ドラッグストア、自動販売機などが立ち並びます。<br>
-                    朝のコーヒーから夜の一杯、日用品や食材の買い物まで、必要なものはすべて徒歩圏で完結。<br>
-                    「旅先」ではなく、「自分の生活スタイル」で過ごせる場所が、ここにあります。</p>
-                    <h4>🌤️ 採光と風通しの良さ：四方採光＆超大型窓で、一日中明るく快適</h4>
-                    <p>各客室の広さは約30㎡。無駄のない間取りに加え、最大の魅力は南向き・北側配置で、東西南北すべてに合計5つの窓がある点です。<br>
-                    しかも窓のサイズは1m×1m以上と、日本の一般的な一戸建てよりも大きく、圧倒的な明るさと開放感を実現しています。</p>
-                    <p>朝はやわらかな自然光で目覚め、昼間は照明なしでも十分な明るさ。冬でも日差しが室内を暖かく包み込みます。<br>
-                    自然光と風通しの良さは、日本の民泊施設ではなかなか出会えない特長です。</p>
-                    <h4>🛋️ 充実した設備：ただの宿泊ではなく、暮らせる空間</h4>
-                    <ul>
-                        <li>高速Wi-Fi：リモートワークや動画視聴もストレスなし</li>
-                        <li>冷暖房エアコン完備：四季を通じて快適</li>
-                        <li>洗濯機、物干し竿、ハンガー付き：長期滞在にも便利</li>
-                        <li>小型キッチンと90L冷蔵庫：自炊で食費を節約、食生活も自由に</li>
-                        <li>床材はクッション性のある耐久性ビニル素材：柔らかく安全、お子様や高齢者にも安心</li>
-                        <li>電動掃除機、布団用吸引機、静電モップなどの掃除道具完備</li>
-                        <li>週1回の定期清掃サービス付き：常に清潔で快適な空間を保てます</li>
-                    </ul>
-                    <h4>🖼️ 内装とアート：滞在空間にも美的なこだわりを</h4>
-                    <ul>
-                        <li>3階はゴッホの《夜のカフェテラス》《星月夜》など、色彩豊かな名画が飾られ、アーティスティックで刺激的な空間を演出</li>
-                        <li>4階は田園風景画を中心に、草原や花畑、湖畔などの穏やかな雰囲気が漂い、癒やしと落ち着きを求める方にぴったり</li>
-                    </ul>
-                    <p>絵画はただの飾りではなく、空間の「個性」を語る存在です。</p>
-                    <h4>🗑️ ゴミ出し自由：専用のごみ置き場で、24時間いつでも廃棄OK</h4>
-                    <p>日本ではごみ出しルールが非常に厳しく、「燃えるごみは月曜のみ」「瓶・缶は洗って仕分け」などの制限が多く、観光客にとっては大きなストレスとなります。<br>
-                    しかし、M’s玉造では建物専用のプライベートごみ置き場を完備しており、24時間いつでもごみを出すことが可能です（大型家具などを除く）。<br>
-                    分別や時間に縛られず、気づいたときにすぐ出せる自由な生活が実現します。これは、日本国内でも非常に珍しく、在住者からも高評価を得ているポイントです。</p>
-                    <h4>🧳 こんな方におすすめ！</h4>
-                    <ul>
-                        <li>海外からの旅行者：言葉の壁があっても安心、生活に必要なものはすべて完備</li>
-                        <li>子連れ家族旅行：広い部屋、安心の床、キッチン完備で自宅のように過ごせる</li>
-                        <li>在宅ワーカーやフリーランス：高速Wi-Fiと日当たりの良さで仕事も快適</li>
-                        <li>カップルや友人グループ：共有しながらも、それぞれの時間を大切にできる空間</li>
-                        <li>短期留学・実習・研修の滞在者：便利な周辺環境と住み心地の良さを両立</li>
-                    </ul>
-                    <p>3泊でも、3週間でも、3か月でも——自分のペースで過ごせる“ちょうど良い”住まいが、ここにあります。</p>
-                    <h4>🎯 M's玉造 ― 宿泊を超えた、「大阪の暮らし」を体験できる場所</h4>
-                    <p>大阪という刺激的でダイナミックな都市の中で、M's玉造はただの民泊ではなく、暮らしを楽しむためのマルチスペースです。<br>
-                    1階の香港料理レストランで手作り餃子や広東式焼き物、ジンジャーティーを味わい、<br>
-                    2階の美容室で気分を一新。<br>
-                    そして、3階・4階の明るく居心地の良い部屋で、あなたの大阪の時間が始まります。<br>
-                    観光でも、仕事でも、暮らしでも。<br>
-                    あなたがここで過ごす日々を、M's玉造がもっと自由に、心地よくします。</p>
-                </div>
-            </div>
+      </section>
+      <!-- 卡片区块 -->
+      <section class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 px-4" id="card-section">
+        <div class="card bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-indigo-100 mb-4">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6"/></svg>
+          </div>
+          <h3 id="card1-title" class="text-xl font-bold mb-2">舒适空间</h3>
+          <p id="card1-desc" class="text-gray-500 mb-4">每间房约30㎡，采光极佳，空间宽敞，适合家庭与长住。</p>
+          <a href="#services" class="text-indigo-600 hover:underline font-semibold">了解详情</a>
         </div>
-    </div>
-    <section class="max-w-3xl mx-auto bg-white rounded shadow p-6 mt-6">
-        <h2 class="text-xl font-semibold mb-2">简介</h2>
-        <p>如果你是第一次来到大阪，想住得舒适自在，又不想每天纠结垃圾投放时间；如果你是家庭出行，希望找到一个能晒太阳、自己做饭、孩子还能随时休息的安稳空间；或者你是来大阪短期工作、留学、参加展会，厌倦了饭店的封闭和高价餐饮，只想拥有一个真正属于自己的“临时住所”——那么，M's玉造3楼与4楼的民宿空间，将几乎满足你对城市居所的全部想象。</p>
-    </section>
-    <section class="max-w-3xl mx-auto bg-white rounded shadow p-6 mt-6">
-        <h2 class="text-xl font-semibold mb-2">完美位置</h2>
-        <p>M's玉造坐落于大阪市东区玉造1丁目4−7，是一栋四层楼建筑，从外观到内部都经过精心设计与打理。步行不到3分钟即可抵达JR环状线玉造站与地铁长堀鹤见绿地线3号出口。无论是要去心斋桥血拼、去天王寺看展览、去梅田商务洽谈、或是往返关西机场，几乎都能一班车直达，避免拖着行李转车、换乘的烦恼。</p>
-    </section>
-    <section class="max-w-3xl mx-auto bg-white rounded shadow p-6 mt-6">
-        <h2 class="text-xl font-semibold mb-2">完善生活圈</h2>
-        <p>出门即是生活圈——便利店（如711、全家）、Life大型超市、早餐面包坊、熟食便当铺、小药局与饮料自动贩卖机都在步行范围内。不論是趕早班車前買杯熱咖啡、深夜回房前買瓶啤酒，還是準備在廚房裡做頓簡餐，所有生活需求都能“下樓即解決”。在M's玉造，不需要“適應”生活節奏，你可以用自己的節奏生活。</p>
-    </section>
-    <section class="max-w-3xl mx-auto bg-white rounded shadow p-6 mt-6">
-        <h2 class="text-xl font-semibold mb-2">空间优势</h2>
-        <p>每间房约30平方米，空间充裕、结构方正。更特别的是，房间为坐北朝南布局，四面共设有五扇超大窗户，每扇尺寸超过1m×1m，比不少日本一户建的窗户还要宽敞。你可以在早晨的自然光中醒来，不开灯也能读书、办公；午后阳光洒在地板上，即便冬天也感受到房间的暖意。这样优越的自然采光条件，在日本民宿中极为少见，特别适合习惯阳光、需要清新氛围的旅客。</p>
-    </section>
-    <section class="max-w-3xl mx-auto bg-white rounded shadow p-6 mt-6">
-        <h2 class="text-xl font-semibold mb-2">完善配套</h2>
-        <ul class="list-disc pl-6 space-y-1">
-            <li><span class="font-semibold text-indigo-700">高速WiFi：</span>适合远程办公、视频会议、流媒体娱乐等多用途</li>
-            <li><span class="font-semibold text-indigo-700">冷暖空调：</span>无论季节转换，始终保持室内舒适</li>
-            <li><span class="font-semibold text-indigo-700">洗衣机、晾衣杆、衣架：</span>长期住也不用发愁换洗</li>
-            <li><span class="font-semibold text-indigo-700">小厨房 + 90升冰箱：</span>可简单料理日常三餐，满足饮食自由</li>
-            <li><span class="font-semibold text-indigo-700">地板采用耐磨防滑的地板胶材质：</span>脚感柔韧，适合老人孩子行走，无需担心摔倒或刮伤</li>
-            <li><span class="font-semibold text-indigo-700">清洁工具齐全：</span>配有电动吸尘器、吸床器、静电除尘扫帚，方便维持房间整洁</li>
-            <li><span class="font-semibold text-indigo-700">每周有专人定期清扫：</span>不必为深度清洁操心，保持卫生与舒适并存</li>
+        <div class="card bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-indigo-100 mb-4">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 10c-4.41 0-8-1.79-8-4V7a2 2 0 012-2h3.17a2 2 0 011.41.59l1.42 1.42a2 2 0 001.41.59h3.17a2 2 0 012 2v7c0 2.21-3.59 4-8 4z"/></svg>
+          </div>
+          <h3 id="card2-title" class="text-xl font-bold mb-2">交通便利</h3>
+          <p id="card2-desc" class="text-gray-500 mb-4">步行3分钟到地铁与JR，直达心斋桥、天王寺、梅田、机场。</p>
+          <a href="#about" class="text-indigo-600 hover:underline font-semibold">查看更多</a>
+        </div>
+        <div class="card bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-indigo-100 mb-4">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 17v-2a4 4 0 018 0v2m-4-4a4 4 0 00-4-4V7a4 4 0 018 0v2a4 4 0 00-4 4z"/></svg>
+          </div>
+          <h3 id="card3-title" class="text-xl font-bold mb-2">多语言友好</h3>
+          <p id="card3-desc" class="text-gray-500 mb-4">支持中/英/日三语，轻松切换，服务无障碍。</p>
+          <a href="#contact" class="text-indigo-600 hover:underline font-semibold">联系我们</a>
+        </div>
+      </section>
+      <!-- 预留内容区块 -->
+      <section id="about" class="max-w-4xl mx-auto mt-16 px-4">
+        <h2 id="about-title" class="text-2xl font-bold text-indigo-700 mb-4">关于我们</h2>
+        <p id="about-desc" class="text-gray-600 mb-8">Hygge民泊致力于为旅客提供温馨、便利、舒适的住宿体验。无论是家庭出行、商务差旅还是短期留学，我们都能为您提供理想的空间。</p>
+      </section>
+      <section id="services" class="max-w-4xl mx-auto mt-16 px-4">
+        <h2 id="services-title" class="text-2xl font-bold text-indigo-700 mb-4">服务内容</h2>
+        <ul id="services-list" class="list-disc pl-6 text-gray-600 space-y-2">
+          <li>高速WiFi与远程办公支持</li>
+          <li>全套厨房与生活设施</li>
+          <li>每周定期清洁</li>
+          <li>多语言入住指引</li>
+          <li>专属垃圾投放点，24小时自由丢弃</li>
         </ul>
-    </section>
-    <section class="max-w-3xl mx-auto bg-white rounded shadow p-6 mt-6">
-        <h2 class="text-xl font-semibold mb-2">艺术氛围</h2>
-        <p>不同楼层呈现不同艺术风格：</p>
-        <ul class="list-disc pl-6 space-y-1">
-            <li><span class="font-semibold text-indigo-700">三楼：</span>房间墙上挂有世界名画，如梵高的《夜晚的咖啡馆》《星夜》，色彩丰富，极具表现力，适合热爱创意与视觉刺激的旅客</li>
-            <li><span class="font-semibold text-indigo-700">四楼：</span>以田园画为主，描绘草地、花园、湖畔等静谧风景，营造温柔宁静的居住氛围，更适合家庭或想好好休息的住客</li>
-        </ul>
-    </section>
-    <section class="max-w-3xl mx-auto bg-white rounded shadow p-6 mt-6">
-        <h2 class="text-xl font-semibold mb-2">垃圾自由</h2>
-        <p>在日本旅行，垃圾分类和投放时间常让人头痛：不可燃只能周一扔？瓶罐要清洗再排队？但在M's玉造，楼下即是本栋专属私人垃圾桶，住客可24小时自由投放所有生活垃圾（除大型家具外），无需担心分类规则或错过回收时间。对于外籍旅客或短期访客来说，这一点堪称“居住自由”的真正体现。</p>
-    </section>
-    <section class="max-w-3xl mx-auto bg-white rounded shadow p-6 mt-6 mb-8">
-        <h2 class="text-xl font-semibold mb-2">适合入住的人群</h2>
-        <ul class="list-disc pl-6 space-y-1">
-            <li>海外自由行游客：不懂日文也能轻松入住，无需担心生活规则</li>
-            <li>带孩子的家庭：大空间 + 安静光线 + 可做饭 + 安全地板</li>
-            <li>在日务工者/远程办公者：高速网路 + 自由作息 + 周边资源齐全</li>
-            <li>情侣/闺蜜/朋友同行：能一起住也能各自享受独立空间，生活不互打扰</li>
-            <li>短期留学/实习/培训人员：长期住也不乏味，交通与生活极度便利</li>
-        </ul>
-    </section>
-    <footer class="bg-indigo-100 text-center py-4 text-indigo-700 font-medium">
-        <p>无论你计划停留三天、三周，还是三个月，M's玉造都已准备好，等待你的归来。</p>
+      </section>
+      <section id="contact" class="max-w-4xl mx-auto mt-16 px-4">
+        <h2 id="contact-title" class="text-2xl font-bold text-indigo-700 mb-4">联系我们</h2>
+        <p id="contact-desc" class="text-gray-600 mb-4">如需预订、咨询或有任何建议，欢迎通过以下方式联系我们：</p>
+        <div class="bg-indigo-50 rounded-lg p-6 flex flex-col md:flex-row md:items-center md:space-x-8">
+          <div class="mb-4 md:mb-0">
+            <span class="block text-gray-700 font-semibold">邮箱：</span>
+            <a id="contact-email" href="mailto:info@hyggebnb.com" class="text-indigo-700 hover:underline">info@hyggebnb.com</a>
+          </div>
+          <div>
+            <span class="block text-gray-700 font-semibold">电话：</span>
+            <a id="contact-phone" href="tel:+81-6-1234-5678" class="text-indigo-700 hover:underline">+81-6-1234-5678</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-white border-t mt-12 py-6 text-center text-gray-500 text-sm">
+      <span id="footer-text">© 2025 Hygge民泊. 保留所有权利.</span>
     </footer>
     <script>
-        function switchLanguage(lang) {
-            // 切换语言逻辑
-            alert('切换到 ' + lang);
-        }
-        function showTab(tabId) {
-            const tabs = document.querySelectorAll('.tab-content');
-            tabs.forEach(tab => tab.style.display = 'none');
-            document.getElementById(tabId).style.display = 'block';
-        }
+    // 多语言内容数据
+    const translations = {
+      zh: {
+        nav: ["首页", "关于我们", "服务内容", "联系我们"],
+        heroTitle: "Hygge民泊，温馨如家",
+        heroDesc: "在大阪，找到“像家但更方便”的理想落脚点",
+        card1: ["舒适空间", "每间房约30㎡，采光极佳，空间宽敞，适合家庭与长住。", "了解详情"],
+        card2: ["交通便利", "步行3分钟到地铁与JR，直达心斋桥、天王寺、梅田、机场。", "查看更多"],
+        card3: ["多语言友好", "支持中/英/日三语，轻松切换，服务无障碍。", "联系我们"],
+        aboutTitle: "关于我们",
+        aboutDesc: "Hygge民泊致力于为旅客提供温馨、便利、舒适的住宿体验。无论是家庭出行、商务差旅还是短期留学，我们都能为您提供理想的空间。",
+        servicesTitle: "服务内容",
+        servicesList: [
+          "高速WiFi与远程办公支持",
+          "全套厨房与生活设施",
+          "每周定期清洁",
+          "多语言入住指引",
+          "专属垃圾投放点，24小时自由丢弃"
+        ],
+        contactTitle: "联系我们",
+        contactDesc: "如需预订、咨询或有任何建议，欢迎通过以下方式联系我们：",
+        contactEmail: "info@hyggebnb.com",
+        contactPhone: "+81-6-1234-5678",
+        footer: "© 2025 Hygge民泊. 保留所有权利."
+      },
+      en: {
+        nav: ["Home", "About", "Services", "Contact"],
+        heroTitle: "Hygge BnB, Feel at Home in Osaka",
+        heroDesc: "Find your ideal stay in Osaka – as cozy as home, but even more convenient.",
+        card1: ["Comfort Space", "Each room is about 30㎡, bright and spacious, perfect for families and long stays.", "Learn More"],
+        card2: ["Great Location", "3-min walk to subway & JR, direct to Shinsaibashi, Tennoji, Umeda, Airport.", "See More"],
+        card3: ["Multilingual Friendly", "Supports Chinese/English/Japanese, easy switch, barrier-free service.", "Contact Us"],
+        aboutTitle: "About Us",
+        aboutDesc: "Hygge BnB is dedicated to providing guests with a warm, convenient, and comfortable stay. Whether for family trips, business, or short-term study, we offer your ideal space.",
+        servicesTitle: "Services",
+        servicesList: [
+          "High-speed WiFi & remote work support",
+          "Full kitchen & living facilities",
+          "Weekly cleaning included",
+          "Multilingual check-in guidance",
+          "Private 24/7 trash disposal"
+        ],
+        contactTitle: "Contact Us",
+        contactDesc: "For booking, inquiries, or suggestions, please contact us:",
+        contactEmail: "info@hyggebnb.com",
+        contactPhone: "+81-6-1234-5678",
+        footer: "© 2025 Hygge BnB. All rights reserved."
+      },
+      ja: {
+        nav: ["ホーム", "私たちについて", "サービス", "お問い合わせ"],
+        heroTitle: "Hygge民泊、大阪で我が家のような温もり",
+        heroDesc: "大阪で“家のように快適”かつ便利な理想の滞在先を見つけよう。",
+        card1: ["快適な空間", "各部屋約30㎡、明るく広々、家族や長期滞在に最適。", "詳細を見る"],
+        card2: ["アクセス抜群", "地下鉄・JRまで徒歩3分、心斎橋・天王寺・梅田・空港へ直通。", "もっと見る"],
+        card3: ["多言語対応", "中・英・日の3言語対応、簡単切替、バリアフリーサービス。", "お問い合わせ"],
+        aboutTitle: "私たちについて",
+        aboutDesc: "Hygge民泊は、温かく便利で快適な宿泊体験を提供します。家族旅行、ビジネス、短期留学など、理想の空間をご用意しています。",
+        servicesTitle: "サービス",
+        servicesList: [
+          "高速WiFi・リモートワーク対応",
+          "キッチン・生活設備完備",
+          "週1回の清掃サービス",
+          "多言語チェックイン案内",
+          "専用ゴミ置き場、24時間利用可"
+        ],
+        contactTitle: "お問い合わせ",
+        contactDesc: "ご予約・ご質問・ご要望は、以下よりご連絡ください：",
+        contactEmail: "info@hyggebnb.com",
+        contactPhone: "+81-6-1234-5678",
+        footer: "© 2025 Hygge民泊. All rights reserved."
+      }
+    };
+
+    // 语言切换函数
+    function switchLanguage(lang) {
+      const t = translations[lang] || translations.zh;
+      // 导航栏
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach((el, i) => el.textContent = t.nav[i]);
+      // Hero
+      document.getElementById('hero-title').textContent = t.heroTitle;
+      document.getElementById('hero-desc').textContent = t.heroDesc;
+      // 卡片
+      document.getElementById('card1-title').textContent = t.card1[0];
+      document.getElementById('card1-desc').textContent = t.card1[1];
+      document.querySelector('#card-section .card:nth-child(1) a').textContent = t.card1[2];
+      document.getElementById('card2-title').textContent = t.card2[0];
+      document.getElementById('card2-desc').textContent = t.card2[1];
+      document.querySelector('#card-section .card:nth-child(2) a').textContent = t.card2[2];
+      document.getElementById('card3-title').textContent = t.card3[0];
+      document.getElementById('card3-desc').textContent = t.card3[1];
+      document.querySelector('#card-section .card:nth-child(3) a').textContent = t.card3[2];
+      // About
+      document.getElementById('about-title').textContent = t.aboutTitle;
+      document.getElementById('about-desc').textContent = t.aboutDesc;
+      // Services
+      document.getElementById('services-title').textContent = t.servicesTitle;
+      const servicesList = document.getElementById('services-list');
+      servicesList.innerHTML = t.servicesList.map(item => `<li>${item}</li>`).join('');
+      // Contact
+      document.getElementById('contact-title').textContent = t.contactTitle;
+      document.getElementById('contact-desc').textContent = t.contactDesc;
+      document.getElementById('contact-email').textContent = t.contactEmail;
+      document.getElementById('contact-email').href = `mailto:${t.contactEmail}`;
+      document.getElementById('contact-phone').textContent = t.contactPhone;
+      document.getElementById('contact-phone').href = `tel:${t.contactPhone}`;
+      // Footer
+      document.getElementById('footer-text').textContent = t.footer;
+    }
+    // 默认中文
+    switchLanguage('zh');
     </script>
 </body>
 </html>
