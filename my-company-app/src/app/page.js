@@ -2,99 +2,116 @@ import Image from "next/image";
 
 /**
  * 企业官网首页
- * 图片资源请放在 public/images/ 目录下，文件名与下方路径一致即可替换占位图。
+ * 图片资源位于 public/images/，路径与文件名见各区块注释。
  */
 export default function Home() {
   return (
     <div className="flex flex-col">
-      {/* ========== Hero：全屏主视觉（背景图 + 公司名 + 三语标语）========== */}
-      <section
-        className="relative flex min-h-screen w-full items-center justify-center bg-stone-900 bg-cover bg-center bg-no-repeat px-6 py-24"
-        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
-      >
-        {/* 背景遮罩：可调整透明度或删除以更换视觉强度 */}
-        <div
-          className="absolute inset-0 bg-stone-900/55"
-          aria-hidden
-        />
-        <div className="relative z-10 mx-auto max-w-4xl text-center text-white">
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
-            M&apos;s 玉造集团
-          </h1>
-          <p className="mt-4 text-lg text-stone-100 sm:text-xl">
-            不动产・民宿・餐饮・美容・玉石销售
-          </p>
-          <p className="mt-2 text-sm text-stone-200 sm:text-base">
-            不動産・民宿・飲食・美容・玉石販売
-          </p>
-          <p className="mt-1 text-sm text-stone-300 sm:text-base">
-            Real Estate, Hostel, Dining, Hair Salon, Jade Sales
-          </p>
+      {/* ========== Hero：主视觉（building1 + 标题文案）========== */}
+      <section className="relative w-full px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+        <div className="relative mx-auto max-w-7xl min-h-[min(88vh,920px)] w-full overflow-hidden rounded-xl shadow-2xl">
+          <Image
+            src="/images/building1.jpg"
+            alt="M's 玉造集团 · 建筑外观"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div
+            className="absolute inset-0 bg-stone-900/55"
+            aria-hidden
+          />
+          <div className="relative z-10 flex min-h-[min(88vh,920px)] items-center justify-center px-6 py-24 text-center text-white">
+            <div className="mx-auto max-w-4xl">
+              <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
+                M&apos;s 玉造集团
+              </h1>
+              <p className="mt-4 text-lg text-stone-100 sm:text-xl">
+                不动产・民宿・餐饮・美容・玉石销售
+              </p>
+              <p className="mt-2 text-sm text-stone-200 sm:text-base">
+                不動産・民宿・飲食・美容・玉石販売
+              </p>
+              <p className="mt-1 text-sm text-stone-300 sm:text-base">
+                Real Estate, Hostel, Dining, Hair Salon, Jade Sales
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* ========== 楼层业务：四张卡片（1F–4F）========== */}
+      {/* ========== 楼层业务：四张卡片（1F–4F → floor1–4）========== */}
       <section
         id="floors"
-        className="border-b border-stone-200 bg-white px-6 py-20"
+        className="border-b border-stone-200 bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
       >
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
             楼层业态
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-center text-stone-600">
-            四层不动产大楼，分层经营多元业态。以下为各楼层简介，图片与文案可自行替换。
+            四层不动产大楼，分层经营多元业态。以下为各楼层实景与简介。
           </p>
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">
             <FloorCard
               floor="1F"
               title="餐饮"
               desc="重餐饮业态，欢迎品牌与顾客垂询。"
-              imageSrc="/images/floor-1f.jpg"
+              imageSrc="/images/floor1.jpg"
             />
             <FloorCard
               floor="2F"
               title="理发店（美容美发）"
               desc="美容美发服务，舒适空间与专业团队。"
-              imageSrc="/images/floor-2f.jpg"
+              imageSrc="/images/floor2.jpg"
             />
             <FloorCard
               floor="3F"
               title="民宿"
               desc="精品民宿体验，旅居之选。"
-              imageSrc="/images/floor-3f.jpg"
+              imageSrc="/images/floor3.jpg"
             />
             <FloorCard
               floor="4F"
               title="民宿"
               desc="高层景观民宿，静谧休憩。"
-              imageSrc="/images/floor-4f.jpg"
+              imageSrc="/images/floor4.jpg"
             />
           </div>
         </div>
       </section>
 
-      {/* ========== 不动产介绍：整栋建筑大图 + 文案 ========== */}
+      {/* ========== 不动产介绍：building1 + building2 大图 + 文案 ========== */}
       <section
         id="property"
-        className="border-b border-stone-200 bg-stone-50 px-6 py-20"
+        className="border-b border-stone-200 bg-stone-50 px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
       >
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
             不动产介绍
           </h2>
           <p className="mt-3 max-w-3xl text-stone-600">
-            以下为整栋建筑示意大图与项目说明，您可在此替换为实拍外观、区位或产权说明等正式文案。
+            以下为项目建筑实景，您可在此补充区位、产权与合作招商等正式说明。
           </p>
-          <div className="mt-10 overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-            <div className="relative aspect-[21/9] w-full min-h-[220px]">
+          <div className="mt-10 flex flex-col gap-8 lg:gap-10">
+            <div className="relative aspect-[21/9] w-full min-h-[200px] overflow-hidden rounded-xl bg-stone-200 shadow-lg">
               <Image
-                src="/images/building.jpg"
-                alt="整栋建筑外观"
+                src="/images/building1.jpg"
+                alt="不动产 · 建筑实景一"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1152px) 100vw, 1152px"
                 priority
+              />
+            </div>
+            <div className="relative aspect-[21/9] w-full min-h-[200px] overflow-hidden rounded-xl bg-stone-200 shadow-lg">
+              <Image
+                src="/images/building2.jpg"
+                alt="不动产 · 建筑实景二"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1152px) 100vw, 1152px"
               />
             </div>
           </div>
@@ -112,10 +129,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== 玉石展示区：Jade Collection ========== */}
+      {/* ========== 玉石展示区：jade1–jade8 ========== */}
       <section
         id="jade"
-        className="border-b border-stone-200 bg-white px-6 py-20"
+        className="border-b border-stone-200 bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
       >
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
@@ -123,25 +140,27 @@ export default function Home() {
           </h2>
           <p className="mt-2 text-lg text-stone-600">玉石精选</p>
           <p className="mt-4 max-w-3xl text-stone-700 leading-relaxed">
-            公司同步经营玉石销售业务。以下为展示画廊占位图（jade1–jade5），
-            您之后可替换为实拍商品图，并在此补充材质、工艺、鉴定与购买渠道等说明文字。
+            公司同步经营玉石销售业务。以下为实拍展品图，您可在此补充材质、工艺、鉴定与购买渠道等说明。
           </p>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:gap-6">
             <JadeImage src="/images/jade1.jpg" alt="玉石展品 1" />
             <JadeImage src="/images/jade2.jpg" alt="玉石展品 2" />
             <JadeImage src="/images/jade3.jpg" alt="玉石展品 3" />
             <JadeImage src="/images/jade4.jpg" alt="玉石展品 4" />
             <JadeImage src="/images/jade5.jpg" alt="玉石展品 5" />
+            <JadeImage src="/images/jade6.jpg" alt="玉石展品 6" />
+            <JadeImage src="/images/jade7.jpg" alt="玉石展品 7" />
+            <JadeImage src="/images/jade8.jpg" alt="玉石展品 8" />
           </div>
           <p className="mt-10 max-w-3xl text-sm text-stone-600 leading-relaxed">
-            【玉石业务说明占位】可在此撰写品牌故事、选石标准、门店/线上渠道、
+            【玉石业务说明】可在此撰写品牌故事、选石标准、门店/线上渠道、
             售后服务与鉴定合作等信息。
           </p>
         </div>
       </section>
 
       {/* ========== 联系方式：地址 / 电话 / 邮箱 + Google Map 预留 ========== */}
-      <section id="contact" className="bg-stone-900 px-6 py-20 text-stone-100">
+      <section id="contact" className="bg-stone-900 px-4 py-16 text-stone-100 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
             联系方式
@@ -188,7 +207,7 @@ export default function Home() {
               <p className="text-sm font-medium uppercase tracking-wide text-stone-400">
                 地图位置
               </p>
-              <div className="mt-3 overflow-hidden rounded-xl border border-stone-700 bg-stone-800">
+              <div className="mt-3 overflow-hidden rounded-xl border border-stone-700 bg-stone-800 shadow-lg">
                 <div className="flex aspect-video w-full items-center justify-center p-8 text-center text-stone-500">
                   <span>
                     在此粘贴 Google Maps iframe，或嵌入其他地图组件。
@@ -210,11 +229,11 @@ export default function Home() {
   );
 }
 
-/** 楼层卡片：图片占位 + 文案 */
+/** 楼层卡片 */
 function FloorCard({ floor, title, desc, imageSrc }) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm transition hover:shadow-md">
-      <div className="relative aspect-[4/3] w-full bg-stone-200">
+    <article className="flex h-full flex-col overflow-hidden rounded-xl border border-stone-200 bg-stone-50 shadow-lg transition hover:shadow-xl">
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-xl bg-stone-200">
         <Image
           src={imageSrc}
           alt={`${floor} ${title}`}
@@ -223,7 +242,7 @@ function FloorCard({ floor, title, desc, imageSrc }) {
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         />
       </div>
-      <div className="flex flex-1 flex-col p-5">
+      <div className="flex flex-1 flex-col rounded-b-xl p-5">
         <p className="text-sm font-semibold text-amber-800">{floor}</p>
         <h3 className="mt-1 text-lg font-semibold text-stone-900">{title}</h3>
         <p className="mt-2 flex-1 text-sm text-stone-600 leading-relaxed">
@@ -237,13 +256,13 @@ function FloorCard({ floor, title, desc, imageSrc }) {
 /** 玉石画廊单项 */
 function JadeImage({ src, alt }) {
   return (
-    <div className="relative aspect-square overflow-hidden rounded-xl border border-stone-200 bg-stone-100 shadow-sm">
+    <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-stone-100 shadow-lg ring-1 ring-stone-200/80">
       <Image
         src={src}
         alt={alt}
         fill
         className="object-cover"
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
       />
     </div>
   );
