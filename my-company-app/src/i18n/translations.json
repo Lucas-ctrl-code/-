@@ -156,7 +156,7 @@
       "labelAddress": "Address",
       "labelPhone": "Phone",
       "labelEmail": "Email",
-      "placeholderAddress": "[Edit] No. __, __ Road, __ District, __ City, China",
+      "placeholderAddress": "Room 202, Kanda Chuo Hall, 5-7 Nishi-Kanda 2-chome, Chiyoda-ku, Tokyo",
       "ctaContact": "Map & full contact details"
     },
     "building": {
@@ -278,7 +278,7 @@
       "labelAddress": "住所",
       "labelPhone": "電話",
       "labelEmail": "メール",
-      "placeholderAddress": "【要入力】〒 住所をご記入ください",
+      "placeholderAddress": "東京都千代田区西神田2丁目5-7 神田中央ホール202号室",
       "ctaContact": "地図・詳細な連絡先へ"
     },
     "building": {
