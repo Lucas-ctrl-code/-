@@ -1,0 +1,236 @@
+{
+  "zh": {
+    "meta": {
+      "siteTitle": "後半彩り株式会社 | 不动产・民宿・餐饮・美容・玉石",
+      "siteDescription": "後半彩り株式会社：四层不动产综合体，餐饮、美容美发、民宿与玉石销售。"
+    },
+    "nav": {
+      "home": "首页",
+      "building": "不动产楼层介绍",
+      "jade": "玉石展示",
+      "contact": "联系我们",
+      "ariaMain": "主导航",
+      "ariaLang": "选择语言"
+    },
+    "lang": { "zh": "中文", "en": "EN", "ja": "日本語" },
+    "brand": {
+      "name": "後半彩り株式会社",
+      "shortTagline": "不动产・民宿・餐饮・美容・玉石销售",
+      "lineJa": "不動産・民宿・飲食・美容・玉石販売",
+      "lineEn": "Real Estate, Hostel, Dining, Hair Salon, Jade Sales"
+    },
+    "footer": {
+      "tagline": "不动产・民宿・餐饮・美容・玉石销售",
+      "navAria": "页脚导航",
+      "rights": "保留所有权利"
+    },
+    "home": {
+      "heroAlt": "後半彩り株式会社 · 建筑外观",
+      "aboutTitle": "公司简介",
+      "aboutBody": "後半彩り株式会社运营四层不动产物业，整合<strong class=\"font-semibold text-stone-900\">重餐饮</strong>、<strong class=\"font-semibold text-stone-900\">美容美发</strong>、<strong class=\"font-semibold text-stone-900\">民宿</strong>及<strong class=\"font-semibold text-stone-900\">玉石销售</strong>等业态，致力于为顾客与合作伙伴提供多元、专业的服务体验。欢迎浏览各楼层介绍与玉石精选，或与我们联系洽谈合作。",
+      "contactTitle": "联系方式",
+      "contactHint": "以下信息可在此修改；地图与完整说明请见「联系我们」页面。",
+      "labelAddress": "地址",
+      "labelPhone": "电话",
+      "labelEmail": "邮箱",
+      "placeholderAddress": "【请填写】中国 XX 省 XX 市 XX 区 XX 路 XX 号",
+      "ctaContact": "查看地图与完整联系信息"
+    },
+    "building": {
+      "pageTitle": "不动产楼层介绍",
+      "pageSubtitle": "四层大楼业态分布与实景照片",
+      "floorsTitle": "楼层业态",
+      "floorsIntro": "四层不动产大楼，分层经营多元业态。以下为各楼层简介与实景。",
+      "f1Title": "餐饮",
+      "f1Desc": "重餐饮业态，欢迎品牌与顾客垂询。",
+      "f2Title": "理发店（美容美发）",
+      "f2Desc": "美容美发服务，舒适空间与专业团队。",
+      "f3Title": "民宿",
+      "f3Desc": "精品民宿体验，旅居之选。",
+      "f4Title": "民宿",
+      "f4Desc": "高层景观民宿，静谧休憩。",
+      "galleryTitle": "实景相册",
+      "galleryIntro": "建筑外观与各楼层实景（共 6 张）",
+      "altBuilding1": "不动产 · 建筑实景一",
+      "altBuilding2": "不动产 · 建筑实景二",
+      "altFloor": "楼层实景",
+      "textTitle": "不动产说明",
+      "textP1": "本项目为四层独立不动产物业，集重餐饮、美容美发、民宿及公司玉石销售业务于一体，区位与建筑条件可根据贵司实际资料在此展开：建筑面积、电梯与消防、停车位、招商业态与合作方式等。",
+      "textP2": "【此处可继续补充】例如：交通位置、周边配套、楼层荷载与排油烟条件、民宿客房数量与房型、合作招商联系方式等。"
+    },
+    "jade": {
+      "pageTitle": "玉石展示",
+      "pageSubtitle": "Jade Collection",
+      "intro": "公司同步经营玉石销售业务。以下为实拍展品图，您可在此补充材质、工艺、鉴定与购买渠道等说明。",
+      "altItem": "玉石展品",
+      "note": "【玉石业务说明】可在此撰写品牌故事、选石标准、门店/线上渠道、售后服务与鉴定合作等信息。"
+    },
+    "contact": {
+      "pageTitle": "联系我们",
+      "pageSubtitle": "欢迎通过电话、邮件或到访与我们取得联系。",
+      "labelAddress": "地址",
+      "labelPhone": "电话",
+      "labelEmail": "Email",
+      "labelMap": "地图位置",
+      "placeholderAddress": "【请填写】中国 XX 省 XX 市 XX 区 XX 路 XX 号",
+      "mapPlaceholder": "在此粘贴 Google Maps iframe",
+      "mapHint": "预留区域"
+    }
+  },
+  "en": {
+    "meta": {
+      "siteTitle": "Kohan Irodori Co., Ltd. | Real Estate, Hostel, Dining, Beauty, Jade",
+      "siteDescription": "A four-story property combining dining, beauty, hostel stays, and jade retail."
+    },
+    "nav": {
+      "home": "Home",
+      "building": "Building & Floors",
+      "jade": "Jade",
+      "contact": "Contact",
+      "ariaMain": "Main navigation",
+      "ariaLang": "Choose language"
+    },
+    "lang": { "zh": "中文", "en": "EN", "ja": "日本語" },
+    "brand": {
+      "name": "Kohan Irodori Co., Ltd.",
+      "shortTagline": "Real estate · Hostel · Dining · Beauty · Jade",
+      "lineJa": "不動産・民宿・飲食・美容・玉石販売",
+      "lineEn": "Real Estate, Hostel, Dining, Hair Salon, Jade Sales"
+    },
+    "footer": {
+      "tagline": "Real estate · Hostel · Dining · Beauty · Jade",
+      "navAria": "Footer navigation",
+      "rights": "All rights reserved"
+    },
+    "home": {
+      "heroAlt": "Kohan Irodori — building exterior",
+      "aboutTitle": "About Us",
+      "aboutBody": "Kohan Irodori Co., Ltd. operates a four-story property, combining <strong class=\"font-semibold text-stone-900\">full-service dining</strong>, <strong class=\"font-semibold text-stone-900\">hair & beauty</strong>, <strong class=\"font-semibold text-stone-900\">hostel</strong>, and <strong class=\"font-semibold text-stone-900\">jade retail</strong>. We aim to offer diverse, professional experiences for guests and partners. Explore our floors and jade gallery, or contact us for partnerships.",
+      "contactTitle": "Contact",
+      "contactHint": "Update the details below; map and full information are on the Contact page.",
+      "labelAddress": "Address",
+      "labelPhone": "Phone",
+      "labelEmail": "Email",
+      "placeholderAddress": "[Edit] No. __, __ Road, __ District, __ City, China",
+      "ctaContact": "Map & full contact details"
+    },
+    "building": {
+      "pageTitle": "Building & Floors",
+      "pageSubtitle": "Floor mix and photo gallery",
+      "floorsTitle": "Floors",
+      "floorsIntro": "Four-story mixed-use building. Overview and photos by floor.",
+      "f1Title": "Dining",
+      "f1Desc": "Heavy dining use; brands and guests welcome.",
+      "f2Title": "Hair salon",
+      "f2Desc": "Hair & beauty in a comfortable setting.",
+      "f3Title": "Hostel",
+      "f3Desc": "Boutique hostel stays.",
+      "f4Title": "Hostel",
+      "f4Desc": "Upper floors with a quieter stay.",
+      "galleryTitle": "Gallery",
+      "galleryIntro": "Exterior and floor views (6 photos)",
+      "altBuilding1": "Property — exterior 1",
+      "altBuilding2": "Property — exterior 2",
+      "altFloor": "Floor photo",
+      "textTitle": "Property notes",
+      "textP1": "This four-story property combines dining, beauty, hostel, and jade retail. Add your details: floor area, elevators, fire safety, parking, leasing, and partnerships.",
+      "textP2": "[Add more] Access, surroundings, MEP constraints, hostel room count, leasing contacts, etc."
+    },
+    "jade": {
+      "pageTitle": "Jade",
+      "pageSubtitle": "Jade Collection",
+      "intro": "We also retail fine jade. Below are sample pieces — add materials, craft, certification, and purchase channels as needed.",
+      "altItem": "Jade piece",
+      "note": "[Jade business] Add brand story, sourcing, online/offline channels, after-sales, and appraisal partners."
+    },
+    "contact": {
+      "pageTitle": "Contact",
+      "pageSubtitle": "Reach us by phone, email, or visit.",
+      "labelAddress": "Address",
+      "labelPhone": "Phone",
+      "labelEmail": "Email",
+      "labelMap": "Map",
+      "placeholderAddress": "[Edit] No. __, __ Road, __ District, __ City, China",
+      "mapPlaceholder": "Paste Google Maps embed iframe here",
+      "mapHint": "Placeholder"
+    }
+  },
+  "ja": {
+    "meta": {
+      "siteTitle": "後半彩り株式会社 | 不動産・民宿・飲食・美容・玉石",
+      "siteDescription": "四層の複合不動産：飲食、美容、民宿、玉石販売。"
+    },
+    "nav": {
+      "home": "ホーム",
+      "building": "フロア案内",
+      "jade": "玉石",
+      "contact": "お問い合わせ",
+      "ariaMain": "メインナビゲーション",
+      "ariaLang": "言語を選択"
+    },
+    "lang": { "zh": "中文", "en": "EN", "ja": "日本語" },
+    "brand": {
+      "name": "後半彩り株式会社",
+      "shortTagline": "不動産・民宿・飲食・美容・玉石販売",
+      "lineJa": "不動産・民宿・飲食・美容・玉石販売",
+      "lineEn": "Real Estate, Hostel, Dining, Hair Salon, Jade Sales"
+    },
+    "footer": {
+      "tagline": "不動産・民宿・飲食・美容・玉石販売",
+      "navAria": "フッターナビ",
+      "rights": "無断転載禁止"
+    },
+    "home": {
+      "heroAlt": "後半彩り株式会社 · 建物外観",
+      "aboutTitle": "会社概要",
+      "aboutBody": "後半彩り株式会社は四層の不動産を運営し、<strong class=\"font-semibold text-stone-900\">飲食</strong>、<strong class=\"font-semibold text-stone-900\">美容・理容</strong>、<strong class=\"font-semibold text-stone-900\">民宿</strong>、<strong class=\"font-semibold text-stone-900\">玉石販売</strong>を展開しています。お客様とパートナーの皆様に、多様で専門的なサービスをご提供します。フロア案内・玉石コーナーをご覧のうえ、お問い合わせください。",
+      "contactTitle": "連絡先",
+      "contactHint": "以下はサンプルです。地図と詳細は「お問い合わせ」ページをご覧ください。",
+      "labelAddress": "住所",
+      "labelPhone": "電話",
+      "labelEmail": "メール",
+      "placeholderAddress": "【要入力】〒 住所をご記入ください",
+      "ctaContact": "地図・詳細な連絡先へ"
+    },
+    "building": {
+      "pageTitle": "フロア案内",
+      "pageSubtitle": "業態配置と実景写真",
+      "floorsTitle": "フロア業態",
+      "floorsIntro": "四層の複合ビル。各フロアの概要と写真です。",
+      "f1Title": "飲食",
+      "f1Desc": "重飲食向け。ブランド・お客様のお問い合わせ歓迎。",
+      "f2Title": "理美容",
+      "f2Desc": "美容・理容。快適な空間とプロのサービス。",
+      "f3Title": "民宿",
+      "f3Desc": "滞在型民宿。",
+      "f4Title": "民宿",
+      "f4Desc": "高層の静かな滞在スペース。",
+      "galleryTitle": "フォトギャラリー",
+      "galleryIntro": "外観・各フロア（全6枚）",
+      "altBuilding1": "不動産 · 外観 1",
+      "altBuilding2": "不動産 · 外観 2",
+      "altFloor": "フロア写真",
+      "textTitle": "物件について",
+      "textP1": "本物件は四層の複合不動産で、飲食・美容・民宿・玉石販売を一体運営しています。延床面積、エレベーター・消防、駐車、テナント条件などは貴社情報に合わせて追記してください。",
+      "textP2": "【追記例】交通・アクセス、周辺環境、排煙・荷重条件、民宿室数・タイプ、業務提携窓口など。"
+    },
+    "jade": {
+      "pageTitle": "玉石展示",
+      "pageSubtitle": "Jade Collection",
+      "intro": "玉石販売も行っています。下記は展示イメージです。素材・加工・鑑定・購入窓口などを追記してください。",
+      "altItem": "玉石展品",
+      "note": "【玉石事業】ブランドストーリー、選石基準、店舗・オンライン、アフター、鑑定連携などを記載できます。"
+    },
+    "contact": {
+      "pageTitle": "お問い合わせ",
+      "pageSubtitle": "お電話・メール・ご来店にて承ります。",
+      "labelAddress": "住所",
+      "labelPhone": "電話",
+      "labelEmail": "メール",
+      "labelMap": "地図",
+      "placeholderAddress": "【要入力】〒 住所をご記入ください",
+      "mapPlaceholder": "Google マップの iframe をここに貼り付け",
+      "mapHint": "予約エリア"
+    }
+  }
+}
