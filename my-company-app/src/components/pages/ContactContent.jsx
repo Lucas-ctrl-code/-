@@ -36,7 +36,7 @@ export default function ContactContent() {
                   href="tel:+8600000000000"
                   className="text-amber-900 underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-800"
                 >
-                  +86 000-0000-0000
+                  +81 03-6261-3003
                 </a>
               </p>
             </div>

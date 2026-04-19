@@ -75,7 +75,7 @@ export default function HomeContent() {
                   href="tel:+8600000000000"
                   className="text-lg text-amber-900 underline-offset-4 hover:underline"
                 >
-                  +86 000-0000-0000
+                  +81 03-6261-3003
                 </a>
               </p>
             </div>
@@ -88,7 +88,7 @@ export default function HomeContent() {
                   href="mailto:contact@example.com"
                   className="text-lg text-amber-900 underline-offset-4 hover:underline"
                 >
-                  contact@example.com
+                  commonroom202@gmail.com
                 </a>
               </p>
             </div>
