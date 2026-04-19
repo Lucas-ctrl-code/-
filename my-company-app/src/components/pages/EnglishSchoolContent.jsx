@@ -30,7 +30,7 @@ export default function EnglishSchoolContent() {
         <div className="relative mx-auto max-w-7xl min-h-[min(88vh,920px)] w-full overflow-hidden rounded-xl shadow-2xl">
           <Image
             src="/images/school1.jpg"
-            alt={t("englishSchool.heroAlt")}
+            alt={t("englishSchool.heroAlt") || "English School Hero"}
             fill
             priority
             className="object-cover"
@@ -75,7 +75,7 @@ export default function EnglishSchoolContent() {
           <div className="relative h-96 overflow-hidden rounded-lg shadow-lg lg:order-2">
             <Image
               src="/images/school2.jpg"
-              alt={t("englishSchool.aboutTitle")}
+              alt={t("englishSchool.aboutTitle") || "School About Section"}
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

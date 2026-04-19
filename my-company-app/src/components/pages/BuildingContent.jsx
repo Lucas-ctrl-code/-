@@ -81,8 +81,8 @@ export default function BuildingContent() {
                     src={item.src}
                     alt={
                       item.floor
-                        ? `${item.floor} ${t(item.altKey)}`
-                        : t(item.altKey)
+                        ? `${item.floor} ${t(item.altKey) || "Building Floor"}`
+                        : t(item.altKey) || "Building Image"
                     }
                     fill
                     className="object-cover"
