@@ -8,6 +8,7 @@ const ROUTES = [
   { href: "/", key: "nav.home" },
   { href: "/building", key: "nav.building" },
   { href: "/jade", key: "nav.jade" },
+  { href: "/english-school", key: "nav.englishSchool" },
   { href: "/contact", key: "nav.contact" },
 ];
 
