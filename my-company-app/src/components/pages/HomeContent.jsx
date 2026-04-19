@@ -64,7 +64,14 @@ export default function HomeContent() {
               <p className="text-sm font-medium uppercase tracking-wide text-stone-500">
                 {t("home.labelAddress")}
               </p>
-              <p className="mt-1 text-stone-800" dangerouslySetInnerHTML={{ __html: t("home.placeholderAddress") }} />
+              <p className="mt-1 text-stone-800">
+                {t("home.placeholderAddress").split("|||").map((line, idx) => (
+                  <span key={idx}>
+                    {line}
+                    {idx === 0 && <br />}
+                  </span>
+                ))}
+              </p>
             </div>
             <div>
               <p className="text-sm font-medium uppercase tracking-wide text-stone-500">

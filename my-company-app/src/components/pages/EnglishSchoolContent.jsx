@@ -201,7 +201,14 @@ export default function EnglishSchoolContent() {
               <h3 className="mt-4 font-semibold text-stone-900">
                 {t("englishSchool.labelAddress")}
               </h3>
-              <p className="mt-2 text-sm text-stone-600" dangerouslySetInnerHTML={{ __html: t("englishSchool.placeholderAddress") }} />
+              <p className="mt-2 text-sm text-stone-600">
+                {t("englishSchool.placeholderAddress").split("|||").map((line, idx) => (
+                  <span key={idx}>
+                    {line}
+                    {idx === 0 && <br />}
+                  </span>
+                ))}
+              </p>
             </div>
 
             {/* Phone */}
