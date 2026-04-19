@@ -34,7 +34,7 @@
       "labelAddress": "地址",
       "labelPhone": "电话",
       "labelEmail": "邮箱",
-      "placeholderAddress": "東京都千代田区西神田2丁目5-7 神田中央ビル202号室",
+      "placeholderAddress": "東京都千代田区西神田2丁目5-7<br>神田中央ビル202号室",
       "ctaContact": "查看地图与完整联系信息"
     },
     "building": {
@@ -73,7 +73,7 @@
       "labelPhone": "电话",
       "labelEmail": "Email",
       "labelMap": "地图位置",
-      "placeholderAddress": "東京都千代田区西神田2丁目5-7 神田中央ビル202号室",
+      "placeholderAddress": "東京都千代田区西神田2丁目5-7<br>神田中央ビル202号室",
       "mapPlaceholder": "在此粘贴 Google Maps iframe",
       "mapHint": "预留区域"
     },
@@ -156,7 +156,7 @@
       "labelAddress": "Address",
       "labelPhone": "Phone",
       "labelEmail": "Email",
-      "placeholderAddress": "Room 202, Kanda Chuo Building, 5-7 Nishi-Kanda 2-chome, Chiyoda-ku, Tokyo",
+      "placeholderAddress": "5-7 Nishi-Kanda 2-chome, Chiyoda-ku, Tokyo<br>Room 202, Kanda Chuo Building",
       "ctaContact": "Map & full contact details"
     },
     "building": {
@@ -195,7 +195,7 @@
       "labelPhone": "Phone",
       "labelEmail": "Email",
       "labelMap": "Map",
-      "placeholderAddress": "Room 202, Kanda Chuo Building, 5-7 Nishi-Kanda 2-chome, Chiyoda-ku, Tokyo",
+      "placeholderAddress": "5-7 Nishi-Kanda 2-chome, Chiyoda-ku, Tokyo<br>Room 202, Kanda Chuo Building",
       "mapPlaceholder": "Paste Google Maps embed iframe here",
       "mapHint": "Placeholder"
     },
@@ -239,7 +239,7 @@
       "labelAddress": "Address",
       "labelPhone": "Phone",
       "labelEmail": "Email",
-      "placeholderAddress": "Room 202, Kanda Chuo Building, 5-7 Nishi-Kanda 2-chome, Chiyoda-ku, Tokyo",
+      "placeholderAddress": "5-7 Nishi-Kanda 2-chome, Chiyoda-ku, Tokyo<br>Room 202, Kanda Chuo Building",
       "ctaContact": "Contact Us"
     }
   },
@@ -278,7 +278,7 @@
       "labelAddress": "住所",
       "labelPhone": "電話",
       "labelEmail": "メール",
-      "placeholderAddress": "東京都千代田区西神田2丁目5-7 神田中央ビル202号室",
+      "placeholderAddress": "東京都千代田区西神田2丁目5-7<br>神田中央ビル202号室",
       "ctaContact": "地図・詳細な連絡先へ"
     },
     "building": {
@@ -317,7 +317,7 @@
       "labelPhone": "電話",
       "labelEmail": "メール",
       "labelMap": "地図",
-      "placeholderAddress": "東京都千代田区西神田2丁目5-7 神田中央ビル202号室",
+      "placeholderAddress": "東京都千代田区西神田2丁目5-7<br>神田中央ビル202号室",
       "mapPlaceholder": "Google マップの iframe をここに貼り付け",
       "mapHint": "予約エリア"
     },
@@ -361,7 +361,7 @@
       "labelAddress": "住所",
       "labelPhone": "電話",
       "labelEmail": "メール",
-      "placeholderAddress": "東京都千代田区西神田2丁目5-7 神田中央ビル202号室",
+      "placeholderAddress": "東京都千代田区西神田2丁目5-7<br>神田中央ビル202号室",
       "ctaContact": "お問い合わせ"
     }
   }
