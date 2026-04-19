@@ -156,7 +156,7 @@
       "labelAddress": "Address",
       "labelPhone": "Phone",
       "labelEmail": "Email",
-      "placeholderAddress": "Room 202, Kanda Chuo Hall, 5-7 Nishi-Kanda 2-chome, Chiyoda-ku, Tokyo",
+      "placeholderAddress": "Room 202, Kanda Chuo Building, 5-7 Nishi-Kanda 2-chome, Chiyoda-ku, Tokyo",
       "ctaContact": "Map & full contact details"
     },
     "building": {
@@ -195,7 +195,7 @@
       "labelPhone": "Phone",
       "labelEmail": "Email",
       "labelMap": "Map",
-      "placeholderAddress": "[Edit] No. __, __ Road, __ District, __ City, China",
+      "placeholderAddress": "Room 202, Kanda Chuo Building, 5-7 Nishi-Kanda 2-chome, Chiyoda-ku, Tokyo",
       "mapPlaceholder": "Paste Google Maps embed iframe here",
       "mapHint": "Placeholder"
     },
@@ -239,7 +239,7 @@
       "labelAddress": "Address",
       "labelPhone": "Phone",
       "labelEmail": "Email",
-      "placeholderAddress": "[To be filled] Address",
+      "placeholderAddress": "Room 202, Kanda Chuo Building, 5-7 Nishi-Kanda 2-chome, Chiyoda-ku, Tokyo",
       "ctaContact": "Contact Us"
     }
   },
@@ -278,7 +278,7 @@
       "labelAddress": "住所",
       "labelPhone": "電話",
       "labelEmail": "メール",
-      "placeholderAddress": "東京都千代田区西神田2丁目5-7 神田中央ホール202号室",
+      "placeholderAddress": "東京都千代田区西神田2丁目5-7 神田中央ビル202号室",
       "ctaContact": "地図・詳細な連絡先へ"
     },
     "building": {
@@ -317,7 +317,7 @@
       "labelPhone": "電話",
       "labelEmail": "メール",
       "labelMap": "地図",
-      "placeholderAddress": "【要入力】〒 住所をご記入ください",
+      "placeholderAddress": "東京都千代田区西神田2丁目5-7 神田中央ビル202号室",
       "mapPlaceholder": "Google マップの iframe をここに貼り付け",
       "mapHint": "予約エリア"
     },
@@ -361,7 +361,7 @@
       "labelAddress": "住所",
       "labelPhone": "電話",
       "labelEmail": "メール",
-      "placeholderAddress": "【入力予定】住所",
+      "placeholderAddress": "東京都千代田区西神田2丁目5-7 神田中央ビル202号室",
       "ctaContact": "お問い合わせ"
     }
   }
