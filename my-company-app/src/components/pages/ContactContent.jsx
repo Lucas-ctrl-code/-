@@ -23,9 +23,7 @@ export default function ContactContent() {
               <p className="text-sm font-medium uppercase tracking-wide text-stone-500">
                 {t("contact.labelAddress")}
               </p>
-              <p className="mt-2 text-lg text-stone-900">
-                {t("contact.placeholderAddress")}
-              </p>
+              <p className="mt-2 text-lg text-stone-900" dangerouslySetInnerHTML={{ __html: t("contact.placeholderAddress") }} />
             </div>
             <div>
               <p className="text-sm font-medium uppercase tracking-wide text-stone-500">

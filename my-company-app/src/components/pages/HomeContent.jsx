@@ -64,7 +64,7 @@ export default function HomeContent() {
               <p className="text-sm font-medium uppercase tracking-wide text-stone-500">
                 {t("home.labelAddress")}
               </p>
-              <p className="mt-1 text-stone-800">{t("home.placeholderAddress")}</p>
+              <p className="mt-1 text-stone-800" dangerouslySetInnerHTML={{ __html: t("home.placeholderAddress") }} />
             </div>
             <div>
               <p className="text-sm font-medium uppercase tracking-wide text-stone-500">

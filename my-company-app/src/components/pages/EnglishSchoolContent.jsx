@@ -201,9 +201,7 @@ export default function EnglishSchoolContent() {
               <h3 className="mt-4 font-semibold text-stone-900">
                 {t("englishSchool.labelAddress")}
               </h3>
-              <p className="mt-2 text-sm text-stone-600">
-                {t("englishSchool.placeholderAddress")}
-              </p>
+              <p className="mt-2 text-sm text-stone-600" dangerouslySetInnerHTML={{ __html: t("englishSchool.placeholderAddress") }} />
             </div>
 
             {/* Phone */}
